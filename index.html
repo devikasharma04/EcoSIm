@@ -66,5 +66,14 @@
       <span class="nav-item">👤</span>
     </nav>
   </div>
+
+  <script>
+    // Lock the app to portrait mode (optional)
+    if (screen.orientation) {
+      screen.orientation.lock("portrait").catch(function(error) {
+        console.log(error);
+      });
+    }
+  </script>
 </body>
 </html>
