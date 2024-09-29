@@ -34,6 +34,7 @@
     overflow-y: auto;           /* Allow the content to scroll vertically */
     gap:30px;
     justify-content: center;
+    padding-bottom: 0px;
   }
   
 
@@ -114,7 +115,7 @@
   }
   
   .room {
-    background-color: #4d007d;
+    background-color: #392281;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -128,11 +129,15 @@
   /* Make the navbar sticky at the bottom */
   .bottom-nav {
     display: flex;
-    justify-content: space-around;
-    padding-top: 15px;
+    height: 80px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
     position: sticky;
-    bottom: 0;                 /* Stick to the bottom of the viewport */
-    background-color: #2d0050;
+    bottom: 0;
+    background: #392281;
+    border-radius: 10px;
   }
   
   .nav-item {
