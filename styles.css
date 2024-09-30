@@ -126,6 +126,14 @@
     margin-bottom: 10px;
   }
   
+  #house-map {
+    background: #CB53FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    height: 100%;
+}
   /* Make the navbar sticky at the bottom */
   .bottom-nav {
     display: flex;
