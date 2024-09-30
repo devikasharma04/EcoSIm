@@ -66,19 +66,50 @@
     <!-- House/Map Screen (Initially Hidden) -->
     <div id="house-map" style="display: none;">
       <h2>House Map</h2>
-      <p>This is where the map or house layout will be displayed.</p>
+      <p>Here is a heatmap of your house</p>
+      <div class="house-map-image">
+        <video controls width="100%" height="auto">
+            <!-- Replace with your actual video file path -->
+            <source src="Assets/house-tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
     </div>
 
-    <!-- Files Screen (Initially Hidden) -->
+    <!-- Report Screen (Initially Hidden) -->
     <div id="files-section" style="display: none;">
-      <h2>Files</h2>
-      <p>This is where the file details will be displayed.</p>
+      <h2>Energy Report</h2>
+      <section class="energy-report">
+        <div class="report-item">
+          <span class="label">Average Energy Usage</span>
+          <span class="value">28kWh/day</span>
+        </div>
+        <div class="report-item">
+          <span class="label">Energy Savings</span>
+          <span class="value saved">5kWh/day</span>
+        </div>
+        <div class="report-item">
+          <span class="label">Projected Usage</span>
+          <span class="value">32kWh/day</span>
+        </div>
+        <div class="report-item">
+          <span class="label">Monthly Cost</span>
+          <span class="value moderate">$75</span>
+        </div>
+      </section>
     </div>
 
     <!-- Profile Screen (Initially Hidden) -->
     <div id="profile-section" style="display: none;">
-      <h2>Profile</h2>
-      <p>This is where the profile information will be displayed.</p>
+      <h2>User Profile</h2>
+      <div class="profile-details">
+        <img src="Assets/profile-picture.png" alt="Profile Picture" class="profile-pic">
+        <h3>Jon Doe</h3>
+        <p>Email: jon.doe@example.com</p>
+        <p>Rooms Managed: 4</p>
+        <button class="add-room-btn">Add Room</button>
+        <button class="delete-room-btn">Delete Room</button>
+      </div>
     </div>
 
     <!-- Bottom Navigation -->
