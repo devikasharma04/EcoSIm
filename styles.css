@@ -58,8 +58,6 @@
   }
   
   .welcome-message h1{
-    margin-top:-5px;
-    margin-bottom: -5px;
     color: #FFF;
     font-family: Roboto;
     font-size: 24px;
@@ -152,6 +150,17 @@
     font-size: 1.5rem;
     color: #fff;
   }
+
+  button.nav-item {
+    background: none;      /* Remove background color */
+    border: none;          /* Remove border */
+    padding: 0;            /* Remove any padding */
+    margin: 0;             /* Ensure no margin */
+    outline: none;         /* Remove outline (focus/active) */
+    box-shadow: none;      /* Remove any box-shadow */
+    appearance: none;      /* Remove any default styling (for cross-browser consistency) */
+    cursor: pointer;       /* Keep pointer cursor to show it's clickable */
+}
   
   /* Media query to ensure the app looks good on devices with max width of 393px */
   @media (max-width: 393px) {
