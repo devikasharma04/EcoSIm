@@ -49,11 +49,11 @@
           </div>
           <div class="room">
             <span class="room-icon">🛏️</span>
-            <p>Jon's Room is using <span>0.9 kWh</span></p>
+            <p>Bedroom is using <span>0.9 kWh</span></p>
           </div>
           <div class="room">
-            <span class="room-icon">🛏️</span>
-            <p>Mike's Room is using <span>0.3 kWh</span></p>
+            <span class="room-icon">🚽</span>
+            <p>Bathroom is using <span>0.3 kWh</span></p>
           </div>
           <div class="room">
             <span class="room-icon">🍴</span>
@@ -69,35 +69,50 @@
       <p>Here is a heatmap of your house</p>
       <div class="house-map-image">
         <video controls width="100%" height="auto">
-            <!-- Replace with your actual video file path -->
             <source src="Assets/house-tour.mp4" type="video/mp4">
             Your browser does not support the video tag.
-          </video>
+        </video>
       </div>
     </div>
 
     <!-- Report Screen (Initially Hidden) -->
-    <div id="files-section" style="display: none;">
-      <h2>Energy Report</h2>
-      <section class="energy-report">
-        <div class="report-item">
-          <span class="label">Average Energy Usage</span>
-          <span class="value">28kWh/day</span>
+  <!-- Report Screen (Initially Hidden) -->
+  <div id="files-section" style="display: none;">
+    <h2>Energy Report</h2>
+    <section class="energy-report">
+      <div class="report-item">
+        <span class="label">Average Energy Usage</span>
+        <span class="value">28kWh/day</span>
+      </div>
+      <div class="report-item">
+        <span class="label">Energy Savings</span>
+        <span class="value saved">5kWh/day</span>
+      </div>
+      <div class="report-item">
+        <span class="label">Projected Usage</span>
+        <span class="value">32kWh/day</span>
+      </div>
+      <div class="report-item">
+        <span class="label">Monthly Cost</span>
+        <span class="value moderate">$75</span>
+      </div>
+
+      <!-- Room Selection Buttons for Energy Graph -->
+      <div class="room-buttons">
+        <button class="room-btn" id="bedroom-btn">Bedroom</button>
+        <button class="room-btn" id="livingroom-btn">Living Room</button>
+        <button class="room-btn" id="kitchen-btn">Kitchen</button>
+        <button class="room-btn" id="bathroom-btn">Bathroom</button>
+      </div>
+
+      <!-- Energy Graph Placeholder -->
+      <div class="energy-graph">
+        <div class="graph-placeholder">
+          <img src="Assets/bedroom-graph.jpg" alt="Energy Graph" id="energy-graph-image" width="100%" height="auto">
         </div>
-        <div class="report-item">
-          <span class="label">Energy Savings</span>
-          <span class="value saved">5kWh/day</span>
-        </div>
-        <div class="report-item">
-          <span class="label">Projected Usage</span>
-          <span class="value">32kWh/day</span>
-        </div>
-        <div class="report-item">
-          <span class="label">Monthly Cost</span>
-          <span class="value moderate">$75</span>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
     <!-- Profile Screen (Initially Hidden) -->
     <div id="profile-section" style="display: none;">
@@ -109,6 +124,14 @@
         <p>Rooms Managed: 4</p>
         <button class="add-room-btn">Add Room</button>
         <button class="delete-room-btn">Delete Room</button>
+      </div>
+      
+      <!-- Additional Profile/Settings Items -->
+      <div class="profile-settings">
+        <button class="settings-btn">Edit Profile</button>
+        <button class="settings-btn">Edit House Settings</button>
+        <button class="settings-btn">View Savings</button>
+        <button class="settings-btn">View History</button>
       </div>
     </div>
 
